@@ -19,8 +19,18 @@ class Game {
     }
     else {
       print('$num 💗 correct 💗');
+      print('Do you want continue?');
+      var x = stdin.readLineSync();
+      if (x == "Y" || x == "y") {
+        return 0;
+      }
+      if (x == "N" || x == "n") {
         return 1;
-
+      }
+      else {
+        print('💀💀💀error!!💀💀💀');
+        return 0;
+      }
     }
     }
   }
